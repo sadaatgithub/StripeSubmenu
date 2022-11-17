@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero:before{
+  /* content:""; */
+  @apply content-[""] absolute inset-0 bg-hero-pattern bg-cover bg-no-repeat -z-[1]
+}
+.submenu:before{
+  @apply content-[""] block w-0 h-0 border-l-[5px] border-l-transparent border-solid border-r-[5px]
+  border-r-transparent absolute -top-[5px] left-[50%] -translate-x-[50%] z-30 border-b-[5px] border-b-white
+}
